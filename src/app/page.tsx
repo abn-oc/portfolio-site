@@ -12,7 +12,7 @@ export default async function Land() {
   console.log(langDetails)
   //getting github commits
   const octokit = new Octokit({
-    auth: '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'
+    auth: process.env.GH_AUTH
   })
   const ghDetails = await octokit.request('GET /users/{username}/events', {
     username: "abn-oc"
