@@ -1,28 +1,11 @@
-import { Octokit } from "octokit"
+import AboutMe from "./_components/about_me";
+import Landing from "./_components/landing";
 
-export default async function Land() {
-
-  //getting leetcode profile stats
-  const lcURL = "https://alfa-leetcode-api.onrender.com/userProfile/abnoc"
-  const lcDetails = await (await fetch(lcURL)).json()
-  console.log(lcDetails)
-  //getting leetcode language stats
-  const langURL = "https://alfa-leetcode-api.onrender.com/languageStats?username=abnoc"
-  const langDetails = await (await fetch(langURL)).json()
-  console.log(langDetails)
-  //getting github commits
-  const octokit = new Octokit({
-    auth: process.env.GH_AUTH
-  })
-  const ghDetails = await octokit.request('GET /users/{username}/events', {
-    username: "abn-oc"
-  })
-  console.log(ghDetails)
-
+export default function Main() {
   return (
-    <div className="p-12">
-    <h1 className="text-3xl">leet API</h1>
-    <p>hi</p>
+    <div className="bg-zinc-900 px-8 sm:px-12 overflow-x-hidden">
+    <Landing/>
+    <AboutMe/>
     </div>
   )
 }
