@@ -6,8 +6,6 @@ export default function Main() {
     <div className="bg-zinc-900 px-8 sm:px-12 overflow-x-hidden">
     {/* <Nav/> */}
     <Landing/>
-    <Landing/>
-    {/* <Landing/> */}
     </div>
   )
 }
