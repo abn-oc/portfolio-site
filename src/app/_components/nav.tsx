@@ -1,12 +1,8 @@
 export default function Nav() {
 
     return (
-        <div className="flex flex-row text-zinc-400 gap-4 text-xl mt-2 py-2">
-            <a href="" className="text-zinc-50">abdullah iht</a>
-            <div className="m-auto"></div>
-            <a href="">stats</a>
-            <a href="">projects</a>
-            <a href="">experience</a>
+        <div className="bg-black min-h-[10vh] text-white flex flex-row items-center px-5 border-b-[1px] border-neutral-700">
+            <a href="" className="font-bold text-3xl">Abdullah iht</a>
         </div>
     )
 }

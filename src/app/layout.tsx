@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import { EB_Garamond } from 'next/font/google';
 import "./globals.css";
-
-const ebGaramond = EB_Garamond({ subsets: ['latin'], weight: ['400', '700'] });
 
 export const metadata: Metadata = {
   title: "portfolio",
@@ -17,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased ebGaramond.className`}
+        className={`antialiased`}
       >
         {children}
       </body>

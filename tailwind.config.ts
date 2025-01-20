@@ -12,9 +12,6 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      fontFamily: {
-        ebgaramond: ['EB Garamond'],
-      },
     },
   },
   plugins: [],
