@@ -4,12 +4,14 @@ import Landing from "./_components/landing";
 import Nav from "./_components/nav";
 import NoSelected from "./_components/noselected";
 import Selector from "./_components/selector"
+import Projects from "./_components/projects";
 
 export default function Main() {
 
   const screens: ReactElement[] = [
     <NoSelected/>,
-    <Landing/>
+    <Landing/>,
+    <Projects/>
   ]
   const [screen, setScreen] = useState<ReactElement>(screens[0])
 
