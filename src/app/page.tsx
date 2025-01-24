@@ -5,13 +5,16 @@ import Nav from "./_components/nav";
 import NoSelected from "./_components/noselected";
 import Selector from "./_components/selector"
 import Projects from "./_components/projects";
+import Experience from "./_components/experience";
 
 export default function Main() {
 
   const screens: ReactElement[] = [
     <NoSelected/>,
     <Landing/>,
-    <Projects/>
+    <Projects/>,
+    <NoSelected/>,
+    <Experience/>
   ]
   const [screen, setScreen] = useState<ReactElement>(screens[0])
 
