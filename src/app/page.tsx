@@ -10,10 +10,10 @@ import Experience from "./_components/experience";
 export default function Main() {
 
   const screens: ReactElement[] = [
-    <NoSelected/>,
-    <AboutMe/>,
-    <Projects/>,
-    <Experience/>
+    <NoSelected key="no-selected" />,
+    <AboutMe key="about-me" />,
+    <Projects key="projects" />,
+    <Experience key="experience" />
   ]
   const [screen, setScreen] = useState<ReactElement>(screens[0])
 
