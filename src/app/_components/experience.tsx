@@ -21,8 +21,8 @@ export default function Experience() {
         },
     ]
 
-    const markup = list.map(exp => 
-        <div className="w-full h-fit bg-neutral-950 p-4 rounded-lg shadow-lg flex flex-col gap-2 transition-all hover:scale-105">
+    const markup = list.map((exp, index) => 
+        <div key={index} className="w-full h-fit bg-neutral-950 p-4 rounded-lg shadow-lg flex flex-col gap-2 transition-all hover:scale-105">
             <div className="flex flex-row">
             <h3 className="text-3xl flex-1">{exp.title}</h3>
             <p>{exp.year}</p>
