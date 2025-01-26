@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "go": "^3.0.1",
+    "go": "1.19",
     "next": "15.1.3",
     "octokit": "^4.0.3",
     "react": "^19.0.0",
