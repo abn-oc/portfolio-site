@@ -6,3 +6,7 @@
     transition-duration: 200ms;
     scale: 1.03;
 }
+
+nextjs-portal {
+    display: none;
+}

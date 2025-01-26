@@ -1,4 +1,4 @@
-export default function Landing() {
+export default function AboutMe() {
 
     const intro = "2nd year cs student from fast lahore. currently learning web and app development. outside of studies, i enjoy games, shows and chess"
 
