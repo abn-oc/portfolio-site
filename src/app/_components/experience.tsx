@@ -28,8 +28,8 @@ export default function Experience() {
             <p>{exp.year}</p>
             </div>
             <div className="flex flex-row gap-2">
-            {exp.type.map(t => 
-                <p className="border border-neutral-700 p-1 px-2 text-xs rounded-2xl text-neutral-300">
+            {exp.type.map((t, index) => 
+                <p key={index} className="border border-neutral-700 p-1 px-2 text-xs rounded-2xl text-neutral-300">
                     {t}
                 </p>
             )}
